@@ -1,0 +1,122 @@
+/* Limpar formatações padrão*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #e6e6e6;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+    font-weight: lighter;
+}
+
+img {
+    padding: 1em 0em;
+}
+
+hr {
+    margin: 1em;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: rgb(255, 230, 0);
+}
+
+#cabecalho {
+    background-color: rgb(255, 230, 0);
+    padding: 1em;
+}
+
+#titulo {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.3em;
+}
+
+#logo {
+    color: rgb(71, 71, 71);
+    font-size: 2.5em;
+}
+
+#links {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+#principal {
+    width: 65.75em;
+    margin: 0 auto;
+}
+
+#area-noticias {
+    float: left;
+}
+
+#area-lateral {
+    float: right;
+}
+
+#rodape {
+    clear: both;
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+    padding: 1em;
+    color: rgb(71, 71, 71);
+}
+
+.branco {
+    color: white;
+}
+
+.pages{
+    padding: 0.4em 0.6em;
+}
+
+.pages:link, .pages:visited {
+    color: white;
+}
+
+.pages:hover {
+    color: rgb(255, 230, 0);
+    background-color: white;
+    border-radius: 0.4em;
+    box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.16);
+}
+
+.noticia {
+    width: 640px;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+
+.titulo-postagem {
+    font-size: 1.5em;
+}
+
+.lateral {
+    padding: 1em;
+    margin: 1em 0;
+    width: 300px;
+    background-color: white;
+}
+
+.lateral, .noticia {
+    border-radius: 0.4em;
+}
+
+.titulo-lateral {
+    background-color: rgb(197, 197, 197);
+    padding: 0.1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+}
