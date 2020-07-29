@@ -1,0 +1,44 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff url(../img/fundo.png) repeat-x;
+}
+
+#conteudo {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+    height: 180px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navegacao-superior li{
+    list-style: none;
+    float: left;
+}
+
+.links-navegacao {
+    background: #b10333 url(../img/divisor.png) repeat-y top right;
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+}
+
+.links-navegacao:hover {
+    background: rgb(250, 2, 43);
+}
+
+#imagem-logo {
+    padding: 30px 20px;
+}
