@@ -1,44 +1,218 @@
+/*--------------------Geral--------------------*/
+
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #fff url(../img/fundo.png) repeat-x;
 }
 
 #conteudo {
-    width: 1000px;
+    width: 57.5%;
     margin: 0 auto;
 }
 
-#cabecalho {
-    background: url(../img/detalhe-topo.png) no-repeat right top;
-    height: 180px;
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #fff url(../img/fundo.png) repeat-x;
+}
+
+h2 {
+    margin-bottom: 15px;
+    padding: 4px 8px;
+    background-color: #294c71;
+    color: white;
+}
+
+h3 {
+    margin-bottom: 7.5px;
+    padding: 2px 8px;
+    background-color: #bb0136;
+    color: white;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
-#navegacao-superior li{
-    list-style: none;
+a {
+    font-size: large;
+}
+
+p {
+    font-size: large;
+    margin-bottom: 5px;
+    background: white;
+}
+
+/*--------------------Parte superior--------------------*/
+
+#cabecalho {
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+    height: 150px;
+    padding-top: 25px;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../img/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+#cabecalho ul {
+    margin-top: 30px;
+    background: #b10333;
     float: left;
 }
 
-.links-navegacao {
-    background: #b10333 url(../img/divisor.png) repeat-y top right;
+#navegacao-superior li{
+    float: left;
+}
+
+#navegacao-superior a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
     text-decoration: none;
+    color: #fff;
+    background: url(../img/divisor.png) no-repeat left center;
+}
+
+#navegacao-superior li a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao-superior a#home,
+body.brasil #navegacao-superior a#brasil,
+body.internacional #navegacao-superior a#internacional,
+body.economia #navegacao-superior a#economia,
+body.saude #navegacao-superior a#saude,
+body.ciencia #navegacao-superior a#ciencia,
+body.fotos #navegacao-superior a#fotos {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+ 
+/*--------------------Conteúdo--------------------*/
+
+#principal {
+    margin-top: 70px;
+}
+
+.container {
+    margin-bottom: 40px;
+    padding: 5%;
+    background: #fff url(../img/fundo-caixa.png);
+}
+
+/*--------------------Menu Lateral--------------------*/
+
+#lista-entrevistas li{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#lateral {
+    float: left;
+    width: 22%;
+}
+
+#lateral ul a {
+    margin: 0 15px;
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+    color: #a1a1a1;
+    padding-left: 20px;
+}
+
+/*--------------------Formatação Formulário--------------------*/
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    margin-bottom: 5px;
+    width: 95%;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/*--------------------Área Principal Cima--------------------*/
+
+#conteudo-principal {
+    float: right;
+    width: 75%;
+}
+
+#conteudo-principal img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#conteudo-principal a {
+    text-decoration: underline;
+    color: #b10333;
+}
+
+#conteudo-principal-1 {
+    float: left;
+}
+
+#conteudo-principal-2 {
+    float: right;
+}
+
+/*--------------------Área Principal Baixo--------------------*/
+
+.materia {
+    width: 48%;
+}
+
+#materias-mundo {
+    width: 100%;
+}
+
+.mini-materia {
+    margin: 5% 5% 0 5%;
+    display: flex;
+}
+
+.img-mini {
+    width: 45%;
+    margin-right: 4%;
+}
+
+.conteudo-mini-materia {
+    text-align: justify;
+}
+
+/*--------------------Rodapé--------------------*/
+
+#rodape {
+    text-align: center;
+    background-color: #294c71;
+    padding: 20px;
     color: white;
-    padding: 15px 35px;
-}
-
-.links-navegacao:hover {
-    background: rgb(250, 2, 43);
-}
-
-#imagem-logo {
-    padding: 30px 20px;
 }
