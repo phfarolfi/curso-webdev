@@ -1,0 +1,169 @@
+/*--------------------Geral--------------------*/
+
+body {
+    font-family: Helvetica, 'Trebuchet MS', sans-serif;
+    background: #fff url(../img/bg.png);
+    border: none;
+    margin: 10px;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    background: url(../img/bg-container.png) top center repeat-y;
+    width: 67%;
+    margin: 0 auto;
+    min-width: 900px;
+}
+
+/*--------------------Parte superior--------------------*/
+
+#topo {
+    background: url(../img/topo-imagem-principal.png) no-repeat top left;
+    height: 250px;
+}
+
+#logo {
+    background: url(../img/logo.png) no-repeat;
+    float: left;
+    margin: 15px;
+    width: 150px;
+}
+
+/*--------------------Navegação Superior--------------------*/
+
+#navegacao {
+    background: url(../img/topo-imagem-lateral.png) no-repeat;
+    float: right;
+    height: 250px;
+}
+
+#conteudo-navg {
+    margin-left: 85px;
+}
+
+#top-navg {
+    margin: 15px;
+    padding: 10px 5px;
+    font-size: 0.8em;
+    border-top: 1px solid #afa762;
+    border-bottom: 1px solid #afa762;
+}
+
+#top-navg span{
+    color: #afa762;
+}
+
+#top-navg a {
+    background-color: #afa762;
+    border-radius: 3px;
+    margin-left: 50px;
+    color: #ede9cc;
+    padding: 5px 10px;
+}
+
+#top-navg a:hover {
+    background-color: rosybrown;
+}
+
+#menu-navg {
+    background: url(../img/depoimento.png) no-repeat right;
+    font-size: 0.8em;
+    margin: 20px 40px;
+    padding: 5px;
+}
+
+#menu-navg li {
+    padding: 8px;
+}
+
+#menu-navg a {
+    color: #8b8650;
+    padding: 8px;
+}
+
+#menu-navg a:hover {
+    background-color: #ede9cc;
+    color: #8b8650;
+    border-radius: 3px;
+}
+
+
+/*--------------------Conteúdo--------------------*/
+
+#texto {
+    background: url(../img/bg-area-principal.png) top left repeat-x;
+    width: 50%;
+    float: left;
+    padding: 0;
+    text-align: justify;
+}
+
+.caixa-conteudo {
+    margin: 0;
+    padding: 20px;
+}
+
+.caixa-conteudo h3 {
+    color: #7d7640;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/*--------------------Conteúdo Direita--------------------*/
+
+#beneficios {
+    background: url(../img/bg-area-lateral.png) top left repeat-x;
+    width: 50%;
+    float: right;
+    padding: 0;
+}
+
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+#beneficios li a {
+    width: 90%;
+}
+
+#beneficios li a img {
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficios li a p {
+    color: #000;
+    font-size: 0.8em;
+}
+
+#beneficios li a h3 {
+    font-size: 1em;
+    color: #615b2d;
+    background: url(../img/ornamento.png) no-repeat center right;
+}
+
+#beneficios li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+}
+
+/*--------------------Rodapé--------------------*/
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    background: #fff url(../img/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
