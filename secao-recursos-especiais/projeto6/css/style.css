@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F4F2EC url(../img/fundo.png) repeat-x;
+    font: 0.7em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#container {
+    width: 58.5%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #A86E13;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 20px;
+    background: #fff;
+    border: none;
+    font-size: 1em;
+}
+
+form {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+/*--------------------HEADER--------------------*/
+
+header {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    margin-top: 4px;
+}
+
+nav li{
+    display: inline;
+    
+}
+
+nav a {
+    margin: 0px 11px;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: #266515;
+    border-bottom: 1px solid grey;
+}
+
+/*--------------------MAIN--------------------*/
+
+#principal {
+    display: flex;
+    margin-top: 30px;
+}
+
+#main-top {
+    margin-right: 20px;
+}
+
+#main-bottom {
+    display: flex;
+}
+
+#main-bottom h3 {
+    color: #227115;
+    margin-bottom: 15px;
+}
+
+#main-bottom section {
+    width: 310px;
+    padding: 15px 25px;
+}
+
+#main-bottom article {
+    margin-bottom: 20px;
+}
+
+#main-bottom ul {
+    margin-left: 30px;
+}
+
+/*--------------------RIGHT SIDE--------------------*/
+
+#area-lateral {
+    background-color: #EBE7DD;
+    width: 350px;
+}
+
+#area-lateral img {
+    margin-bottom: 10px;
+}
+
+#form-visita {
+    background-color: #CDC8B0;
+    padding: 25px;
+}
+
+#form-visita h4, #galeria-fotos h4 {
+    color: #86521A;
+    margin-bottom: 10px;
+}
+
+#data, #numero-pessoas {
+    border: 1px solid #ada484;
+}
+
+#data {
+    width: 130px;
+}
+
+#numero-pessoas {
+    width: 40px;
+}
+
+#botao {
+    background: #9B9271;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#galeria-fotos {
+    padding: 25px;
+}
+
+#imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#imagens img {
+    background: url(../img/fundo-foto.png);
+    padding: 20px 17px;
+}
+
+/*--------------------FOOTER--------------------*/
+
+footer {
+    background: #F4F2EC url(../img/fundo-rodape.png) no-repeat top;
+    height: 90px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer section {
+    padding-top: 5px;
+}
+
+footer nav {
+    margin: 15px 0;
+}
+
+footer span {
+    justify-content: space-between;
+}
