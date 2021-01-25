@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de callback</title>
+    <script>
+
+        function exibirartigo (id, callbackSucesso, callbackErro) {
+            if(false){
+                callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas...')
+            }
+            else{
+                callbackErro('Erro ao recuperar dados')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr/>')
+            document.write('<p>' + descricao + '</p>')
+        }
+
+        var callbackErro = function(erro){
+            document.write('<p><b>Erro: </b>' + erro + '</p>')
+        }
+
+        exibirartigo(1, callbackSucesso, callbackErro)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
