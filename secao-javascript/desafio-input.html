@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Input</title>
+    <script>
+        function FocoAmarelo() {
+            document.getElementById('caixa_de_texto').style.backgroundColor = '#FFFF00'
+        }
+
+        function SemFoco() {
+            var conteudo = document.getElementById('caixa_de_texto').value
+            conteudo.trim()
+
+            if(conteudo.length < 3) {
+                document.getElementById('caixa_de_texto').style.backgroundColor = '#FF0000'
+            }
+            else {
+                document.getElementById('caixa_de_texto').style.backgroundColor = '#00FF00'
+            }
+        }
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <input 
+    id="caixa_de_texto"
+    class="cor_padrao"
+    type="text"
+    onfocus="FocoAmarelo()"
+    onfocusout="SemFoco()"
+    >
+</body>
+</html>
