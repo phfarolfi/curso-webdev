@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio do array</title>
+        <script>
+            var objetos = Array()
+            
+            function Adiciona() {
+                var elemento = document.getElementById('caixa_texto').value
+                elemento.trim()
+
+                if(elemento === ''){
+                    alert('Informe um valor válido!')
+                }
+                else{
+                    if(objetos.indexOf(elemento) != -1) {
+                        alert('Objeto já foi adicionado!')
+                    }
+                    else{
+                        objetos.push(elemento)
+                        console.log(objetos)
+                        document.getElementById('caixa_texto').value = ''
+                    }
+                }
+                
+            }
+
+            function Ordenar() {
+                objetos.sort()
+                console.log(objetos)
+            }
+
+        </script>
+    </head>
+    <body>
+        <span><input id="caixa_texto"type="text"></span>
+        <span><button id="adiciona" onclick="Adiciona()">Adicionar</button></span>
+        <span><button id="ordena" onclick="Ordenar()">Ordenar</button></span>
+    </body>
+</html>
