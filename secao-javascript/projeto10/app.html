@@ -3,11 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>Mata Mosquito - The Game</title>
         <link rel="stylesheet" href="style.css">
-        <script src="jogo.js"></script>
     </head>
     <body onresize="AjustarJanela()">
-        <script>posicaoAleatoria()</script>
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png" alt="">
+                <img id="v2" src="imagens/coracao_cheio.png" alt="">
+                <img id="v3" src="imagens/coracao_cheio.png" alt="">
+            </div>
+
+            <div class="cronometro">Tempo Restante: <span id="cronometro"></span></div>
+        </div>
+
+        <script src="jogo.js"></script>
+        <script>
+            document.getElementById('cronometro').innerHTML = tempo
+
+            setInterval(function(){
+                posicaoAleatoria()
+            }, tempo_mosquito)
+            </script>
+
     </body>
 </html>
