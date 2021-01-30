@@ -14,10 +14,11 @@
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
+    <script src="app.js"></script>
+
 	</head>
 
   <body>
-
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
       <div class="container">
@@ -53,7 +54,7 @@
         <div class="col-md-2">
           <select class="form-control" id="ano">
             <option value="">Ano</option>
-            <option value="2018">2018</option>
+            <option value="2021">2021</option>
           </select>
         </div>
 
@@ -81,7 +82,7 @@
 
         <div class="col-md-6">
           <select class="form-control" id="tipo">
-            <option>Tipo</option>
+            <option value="">Tipo</option>
             <option value="1">Alimentação</option>
             <option value="2">Educação</option>
             <option value="3">Lazer</option>
@@ -101,12 +102,30 @@
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onclick="cadastrarDespesa()">
             <i class="fas fa-plus"></i>
           </button>
         </div>
       </div>
     </div>
-  </body>	
+
+  <!-- Modal -->
+  <div class="modal fade" id="registraDespesa" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div id="modal-div">
+          <h5 id="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="modal-message" class="modal-body"></div>
+        <div class="modal-footer">
+          <button id="modal-button" type="button" data-dismiss="modal" onclick="limparCampos()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
 
 </html>
