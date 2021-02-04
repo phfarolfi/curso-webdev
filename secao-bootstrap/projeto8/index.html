@@ -64,13 +64,34 @@
       </nav>
     </header>
 
-    <section class="text-center home">
-      <div class="container">
-        <h1 class="texto-home text-light"><b>Música para todos</b></h1>
+    <section id="home" class="d-flex">
+      <div class="container-fluid align-self-center">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="carousel-spotify" class="carousel slide" data-ride="carousel"> <!-- Carousel -->
+              <div class="carousel-inner"> <!-- Inner -->
 
-        <button type="button" class="btn btn-home btn-roxo btn-lg m-3"><b>APROVEITE O SPOTIFY FREE</b></button>
+                <div class="carousel-item active text-center home">
+                  <h1 class="texto-home"><b>Música para todos</b></h1>
+                  <button type="button" class="btn btn-home btn-roxo btn-lg"><b>APROVEITE O SPOTIFY FREE</b></button>
+                  <button type="button" class="btn btn-home btn-outline-light btn-lg"><b>OBTENHA O SPOTIFY PREMIUM</b></button>
+                </div>
 
-        <button type="button" class="btn btn-home btn-outline-light btn-lg"><b>OBTENHA O SPOTIFY PREMIUM</b></button>
+                <div class="carousel-item text-center home">
+                  <h1 class="texto-home"><b>As melhores rádios</b></h1>
+                  <button type="button" class="btn btn-home btn-outline-light btn-lg"><b><i class="fas fa-music"></i> OUÇA AGORA </b><i class="fas fa-music"></i></button>
+                </div>
+
+              </div> <!-- Fim Inner -->
+
+              <!-- Controles -->
+              <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev"><i class="fas fa-angle-left fa-2x"></i></a>
+              <a href="#carousel-spotify" class="carousel-control-next" data-slide="next"><i class="fas fa-angle-right fa-2x"></i></a>
+              <!-- Fim Controles -->
+
+            </div> <!-- Fim Carousel -->
+          </div>
+        </div>
       </div>
     </section>
 
@@ -126,14 +147,14 @@
       </div>
     </section>
 
-    <footer id="rodape" class="">
+    <footer>
       <div class="container">
-        <div class="row">
+        <div class="row text-center text-md-left">
           <div class="col-md-2 d-none d-lg-block">
             <a class="navbar-brand" href="index.html"><img src="imagens/spotify.svg" width="142" alt=""></a>
           </div>
           <div class="links-rodape col-md-2">
-            <h4>COMPANY</h4>
+            <h4 class="">COMPANY</h4>
             <ul class="navbar-nav">
               <li><a href="">Sobre</a></li>
               <li><a href="">Empregos</a></li>
@@ -157,7 +178,7 @@
               <li><a href="">Player da web</a></li>
             </ul>
           </div>
-          <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end">
             <a href="" class="text-secondary ml-2">
               <i class="fab fa-instagram fa-lg"></i>
             </a>

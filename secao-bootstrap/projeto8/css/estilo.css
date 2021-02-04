@@ -14,14 +14,15 @@ body {
     color: white;
 }
 
-.texto-home {
-    font-size: 30pt;
-    font-style: normal;
-    margin: 100px 0px;
+.home {
+    margin-bottom: 460px;
 }
 
-.home {
-    margin-bottom: 404px;
+.texto-home {
+    color: white;
+    font-size: 30pt;
+    font-style: normal;
+    margin-bottom: 100px;
     margin-top: 180px;
 }
 
@@ -32,6 +33,7 @@ body {
     -moz-border-radius: 500px;
     transition: background 0.4s, color 0.4s;
     padding: 10px 15px;
+    margin-bottom: 20px;
 }
 
 .btn-roxo {
@@ -41,6 +43,74 @@ body {
 .btn-roxo:hover {
     background: #6207e3;
     color: white;
+}
+
+.texto-conteudo {
+    margin: 35px 0;
+}
+
+.texto-conteudo h1, .texto-conteudo h2{
+    color: #7c26f8;
+    font-weight: 700;
+}
+
+.texto-conteudo h1, .texto-conteudo p, .texto-recursos h1 {
+    padding-bottom: 20px;
+}
+
+#recursos {
+    margin-top: 30px;
+}
+
+.texto-recursos {
+    font-weight: 700;
+}
+
+.texto-recursos h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.texto-recursos h2 {
+    color: rgb(158, 240, 255);
+    font-size: 1.8em;
+}
+
+.texto-recursos p {
+    color: white;
+    font-size: 0.8em;
+}
+
+.rotate {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+footer {
+    padding: 50px 0 20px 0;
+    background-color: black;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+.links-rodape{
+    margin-bottom: 20px;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -93,71 +163,4 @@ body {
     .texto-home{
         font-size: 90pt;
     }
-}
-
-.texto-conteudo {
-    margin: 35px 0;
-}
-
-.texto-conteudo h1, .texto-conteudo h2{
-    color: #7c26f8;
-    font-weight: 700;
-}
-
-.texto-conteudo h1, .texto-conteudo p, .texto-recursos h1 {
-    padding-bottom: 20px;
-}
-
-#recursos {
-    margin-top: 30px;
-}
-
-.texto-recursos {
-    font-weight: 700;
-}
-
-.texto-recursos h1 {
-    color: white;
-    font-size: 3em;
-}
-
-.texto-recursos h2 {
-    color: rgb(158, 240, 255);
-    font-size: 1.8em;
-}
-
-.texto-recursos p {
-    color: white;
-    font-size: 0.8em;
-}
-
-.rotate {
-    transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    padding-left: 80px;
-}
-
-#rodape {
-    padding: 50px 0 20px 0;
-    background-color: black;
-}
-
-footer h4 {
-    color: #919496;
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-footer .navbar-nav a {
-    color: white;
-    font-size: 0.8em;
-}
-
-footer .navbar-nav a:hover {
-    color: #9bf0e1;
-    text-decoration: none;
-}
-
-.links-rodape{
-    margin-bottom: 20px;
 }
