@@ -40,7 +40,7 @@
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
                 
-                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
+                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?> <!-- caso o login tenha sido invalidado com erro de autenticação, é mostrada a mensagem abaixo -->
                 
                   <div class="text-danger text-center">
                     Usuário ou senha inválido(s).
@@ -48,7 +48,7 @@
 
                 <?php } ?>
 
-                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?> <!-- caso tentem acessar páginas restritas da aplicação para quem não fez login, o script "validador_acesso.php" retorna o "erro2", que exibe a mensagem abaixo -->
                 
                   <div class="text-danger text-center">
                     Acesso restrito.
